@@ -1,0 +1,85 @@
+<fieldset><h1 style="font-family:sans-serif;"><center> vIsHnU Travels </center></h1></fieldset>
+<form method= GET action=confirmReceipt>
+
+<p>
+<label for="customer-name">Name
+<input type="text" name="customer-name" required>
+</label>
+</p>
+
+<p>
+<label for="phone-number">Phone
+<input type="tel" name="phone-number">
+</label>
+</p>
+
+<p>
+<label for="email-address">Email
+<input type="email" name="email-address">
+</label>
+</p>
+
+<p>
+<label>No.of People
+<select id="n_of_p" name="n-of-p" required>
+<option value="" selected="selected">Select One</option>
+<option value="1" >One</option>
+<option value="2" >Two</option>
+<option value="3" >Three</option>
+<option value="4" >Four</option>
+<option value="5" >Five</option>
+<option value="6" >Six</option>
+<option value="7" >Seven</option>
+<option value="8" >Eight</option>
+</select>
+</label>
+</p>
+<tr>
+	<td> </td>
+</tr>
+
+
+<fieldset>
+<legend>Which taxi do you require?</legend>
+<p><label> <input type="radio" name="taxi" required value="Car"> Car </label></p>
+<p><label> <input type="radio" name="taxi" required value="Van"> Van </label></p>
+<p><label> <input type="radio" name="taxi" required value="Mini Van"> Mini Van</label></p>
+</fieldset>
+
+<p>
+	<label>Pickup Date/Time
+	<input type="datetime-local" name="pickup_time" required>
+	</label>
+</p>
+
+<p>
+<label>Pickup Place
+<select id="pickup_place" name="pickup_place" required>
+<option value="" selected="selected">Select One</option>
+<option value="Chirala" >Chirala</option>
+<option value="Bapatla Engg College" >Bapatla Engg College</option>
+<option value="SS Hostel" >SS Hostel</option>
+</select>
+</label>
+</p>
+
+<p>
+<label>Drop-off Place
+<input type="text" name="dropoff_place" required list="destinations">
+</label>
+	<datalist id="destinations">
+	<option value="Railway Station">
+	<option value="Beach">
+	<option value="Clock Tower">
+</datalist>
+</p>
+
+<p>
+<label>Special Instructions
+<textarea name="comments" maxlength="500"></textarea>
+</label>
+</p>
+
+<p><button>Submit Booking</button></p>
+
+</form>
